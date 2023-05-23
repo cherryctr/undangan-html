@@ -1312,6 +1312,186 @@ Due to the split circle of progress-left and progress right, we must use the ani
   margin-bottom: 1em;
 }
 
+
+/* 
+---------------------------------------------
+Pricing Style
+--------------------------------------------- 
+*/
+
+.pricing {
+  padding-top: 130px;
+  position: relative;
+}
+
+/* .pricing:after {
+  content: '';
+  background-image: url(../images/services-left-dec.jpg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 786px;
+  height: 1217px;
+  z-index: 0;
+} */
+
+.pricing:before {
+  content: '';
+  /* background-image: url(../images/services-right-dec.jpg); */
+  background-repeat: no-repeat;
+  /* position: absolute; */
+  right: 0;
+  top: 400px;
+  width: 161px;
+  height: 413px;
+  /* z-index: 0; */
+}
+
+.pricing .section-heading {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.pricing .section-heading .line-dec {
+  margin: 0 auto;
+}
+
+.pricing .naccs {
+  position: relative;
+  z-index: 1;
+}
+
+.pricing .icon {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.pricing .naccs .menu div h4 {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  width: 100%;
+}
+
+.pricing .icon img {
+  margin-bottom: 10px;
+  max-width: 60px;
+  min-width: 60px;
+}
+
+.pricing .naccs .menu {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.pricing .naccs .menu div {
+  color: #2a2a2a;
+  margin: 0px;
+  width: 15%;
+  font-size: 20px;
+  font-weight: 700;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  border-radius: 15px;
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.pricing .naccs .menu div .thumb {
+  display: inline-block;
+  width: 100%;
+  padding: 30px 0px;
+  background-color: #fff;
+}
+
+.pricing .naccs .menu div.active {
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+}
+
+.pricing ul.nacc {
+  height: 100% !important;
+  position: relative;
+  min-height: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.pricing ul.nacc li {
+  opacity: 0;
+  transform: translateX(-50px);
+  position: absolute;
+  list-style: none;
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.pricing ul.nacc li.active {
+  transition-delay: 0.3s;
+  position: relative;
+  z-index: 2;
+  opacity: 1;
+  transform: translateX(0px);
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 80px 120px 50px 120px;
+}
+
+.pricing ul.nacc li {
+  width: 100%;
+}
+
+.pricing ul.nacc li .right-image img {
+  max-width: 420px;
+  float: right;
+}
+
+.pricing .nacc .thumb h4 {
+  color: #2a2a2a;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 35px;
+  margin-bottom: 25px;
+}
+
+.pricing .nacc .thumb .main-white-button {
+  text-align: right;
+  margin-top: 40px;
+}
+
+.pricing .nacc .thumb .main-white-button a {
+  background-color: #8d99af;
+  color: #fff;
+}
+
+.services .nacc .thumb .main-white-button a i {
+  background-color: #fff;
+  color: #8d99af;
+}
+
+.services .left-text h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fa65b1 !important;
+}
+
+.services .left-text p {
+  margin-bottom: 30px;
+}
+
+.nacc .ticks-list span {
+  display: inline-block;
+  opacity: 1;
+  margin-right: 45px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
 /* 
 ---------------------------------------------
 Services Style
