@@ -1,3 +1,10 @@
 .logo-images {
     width: 250px !important;
 }
+
+.gambar-katalog {
+    /* box-shadow: 10px 10px;
+    border-radius: 15px; */
+    box-shadow: 7px 10px #17289999;
+    border-radius: 15px;
+}
